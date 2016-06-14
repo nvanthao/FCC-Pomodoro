@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Digi';
+    src: url('./font/DS-DIGII.ttf');
+}
+* {
+    font-family: monospace;
+    color: white;
+    /*prevent select text*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.row {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+}
+.row> div[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+.clock {
+    margin-top: 40px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 2px 2px 8px;
+}
+.timer {
+    text-align: center;
+}
+.status {
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.timer-text {
+    font-size: 12em;
+    font-family: 'Digi';
+    color: #ABFF00;
+    text-shadow: 2px 2px 8px #FF0000;
+    cursor: pointer;
+}
+.config-box {
+    height: 50%;
+    text-align: center;
+    font-size: 1em;
+}
+.config-bar {
+    margin-top: 20px;
+}
+.config-number {
+    font-size: 4em;
+    font-family: 'Digi';
+    color: #ABFF00;
+    text-shadow: 2px 2px 8px #FF0000;
+    padding: 0 5px;
+}
+.config-sign {
+    font-size: 2em;
+    cursor: pointer;
+}
+.config-sign:active {
+    transform: translateY(2px);
+}
